@@ -7,13 +7,14 @@
         <input type="submit" onclick="fact()" placeholder="submit">
     </body>
     <script>
-        const num = document.getElementById(num).value
         function fact (){
-            f=1;
-        for(var i =1;i<num;i++){
-             f=f*i
+        var num = Number(document.getElementById('num').value);
+        var f=1;
+        var i;    
+        for(i=1; i<=num; i++){
+             f=f*i;
         }
-        alert('factorial : ' +f)
+        alert('factorial : ' +f);
         }
     </script>
 </html>
